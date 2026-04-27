@@ -43,5 +43,4 @@ function adicionarFlashcard() {
     }
 }
 
-adicionarFlashcard();
-console.log(flashcards);
+export default adicionarFlashcard;
