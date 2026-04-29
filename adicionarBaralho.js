@@ -16,7 +16,9 @@ function adicionarBaralho() {
             titulo: titulo,
         });
         console.log('Baralho adicionado com sucesso!');
+        break;
     }
 }
 
-export default adicionarBaralho;
+adicionarBaralho();
+//export default adicionarBaralho;
