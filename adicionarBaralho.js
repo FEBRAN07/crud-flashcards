@@ -10,6 +10,10 @@ function adicionarBaralho() {
             console.log('ERRO: Digite um título válido!');
             continue;
         }
+        //SE O NOME DO BARALHO FOR REPETIDO
+        //função de busca recebe o nome novo. 
+        // se achar, retorno negativo. se nao, push
+
         let ultimoId = baralhos[len - 1].id;
         baralhos.push({
             id: ultimoId + 1,
