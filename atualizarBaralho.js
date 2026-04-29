@@ -12,6 +12,7 @@ function atualizarBaralho(baralhoId) {
     }
 
     baralhos[indice].titulo = prompt("Digite o título atualizado do baralho: ");
+    console.log("Baralho atualizado!");
     return;
 }
 export default atualizarBaralho;
