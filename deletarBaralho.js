@@ -18,7 +18,13 @@ function deletarBaralho(baralhoID) {
                 }
             }
             console.log('Baralho removido com sucesso!');
+        } else {
+            console.log("Encerrando deleção...");
+            return;
         }
+    } else {
+        console. log("Erro: Baralho não encontrado!");
+        return;
     }
 }
 

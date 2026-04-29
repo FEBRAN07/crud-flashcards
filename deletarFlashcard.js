@@ -11,7 +11,13 @@ function deletarFlashcard(flahscardID) {
         if(confirm.toLowerCase() == "s"){
             flashcards.splice(indice, 1);
             console.log('Flashcard removido com sucesso!');
+        } else {
+            console.log("Encerrando deleção...");
+            return;
         }
+    } else {
+        console. log("Erro: Flashcard não encontrado!");
+        return;
     }
 }
 

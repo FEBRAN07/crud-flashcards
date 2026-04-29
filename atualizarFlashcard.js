@@ -7,7 +7,7 @@ function atualizarFlashcard(flashcardId) {
     const indice = flashcards.findIndex(flashcard => flashcard.id === flashcardId);
 
     if (indice === -1) {
-        console. log("Erro: Baralho não encontrado!");
+        console. log("Erro: Flashcard não encontrado!");
         return;
     }
 
