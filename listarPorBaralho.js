@@ -14,7 +14,7 @@ function listarPorBaralho() {
         });
         if (!flag) {
             console.log('ERRO: Digite um id de baralho válido!');
-            continue;
+            break;
         }
         console.log(`Listando flashcards com o id de baralho ${idBaralho}: `);
         flashcards.forEach((flashcard) => {
@@ -29,4 +29,5 @@ function listarPorBaralho() {
     }
 }
 
-listarPorBaralho();
+//listarPorBaralho();
+export default listarPorBaralho;
