@@ -3,8 +3,8 @@ import PromptSync from 'prompt-sync';
 import flashcards from './flashcard.js';
 const prompt = PromptSync();
 
-function deletarFlashcard(flahscardID) {
-    const indice = flashcards.findIndex(flashcard => flashcard.id === flahscardID);
+function deletarFlashcard(flashcardID) {
+    const indice = flashcards.findIndex(flashcard => flashcard.id === flashcardID);
 
     if (indice !== -1) {
         let confirm = prompt("Tem certeza que quer deletar esse flashcard?(s/n)");
