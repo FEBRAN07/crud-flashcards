@@ -39,6 +39,9 @@ function operacoes(op) {
             deletarBaralho()
         case 9:
             deletarFlashcard()
+        //buscas
+        case 10:
+        case 11:
 
     }
 }
