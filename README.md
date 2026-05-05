@@ -1,15 +1,12 @@
-
-
-Link do GitHub dos autores:
-
+Autores: Felipe Brandes, Pedro Paulo Woytichoski Neto, Ana Carolina Ataya
 
 Descrição do sistema:
 Sistema interativo que permite gerenciar os flashcards e seus respectivos baralhos.
 
 ESTRUTURA
-    baralhos.js: Estrutura dos baralhos
-        O baralho serve para classificar os flashcards. 
-        Análogo às diferentes caixas de baralhos e suas respectivas cartas(flashcards).
+baralhos.js: Estrutura dos baralhos
+O baralho serve para classificar os flashcards.
+Análogo às diferentes caixas de baralhos e suas respectivas cartas(flashcards).
 
         Exporta uma array de objetos
         id: identificador único para cada baralho
@@ -23,25 +20,20 @@ ESTRUTURA
         idBaralho: chave estrangeira que vincula o flashcard a um baralho específico
 
 CREATE
-    adicionarBaralho.js
-        1. Recebe o titulo
-        2. Se a resposta for vazia, retorna erro por título inválido.
-        3. Se não, se o nome do baralho for repetido, retorna erro por título já existente.
-        4. Se não, gera um id automático.
-
+adicionarBaralho.js 1. Recebe o titulo 2. Se a resposta for vazia, retorna erro por título inválido. 3. Se não, se o nome do baralho for repetido, retorna erro por título já existente. 4. Se não, gera um id automático.
 
     adicionarFlashcard.js
         1. Recebe pergunta , resposta e idBaralho . O id é gerado automaticamente.
         2. Se pelo menos um deles for vazio, retorna erro por resposta inválida.
-        3. Percorre o array baralho para verificar se o id requisitado existe. 
+        3. Percorre o array baralho para verificar se o id requisitado existe.
         4. Se não existe, retorna erro por id inválido.
         5. O id é gerado automaticamente e o novo flashcard é adicionado ao array.
 
 READ
-    listarBaralhos.js
-        Exibir todos os baralhos cadastrados com seus respectivos ids e títulos.
+listarBaralhos.js
+Exibir todos os baralhos cadastrados com seus respectivos ids e títulos.
 
-    listarflashcards.js 
+    listarflashcards.js
         Exibir todos os flashcards do sistema com seus respectivos ids, id do baralho, perguntas e respostas.
 
     listarPorBaralho.js
@@ -49,12 +41,12 @@ READ
         Se for, lista apenas os flashcards que pertencem a um idBaralho específico.
 
 UPDATE
-    atualizarBaralho.js
-        recebe o id do flashcard a ser atualizado
-        verifica se o id existe
-        se não existe, retorna erro por invalido
-        se existe, recebe o título novo e atualiza.
-    
+atualizarBaralho.js
+recebe o id do flashcard a ser atualizado
+verifica se o id existe
+se não existe, retorna erro por invalido
+se existe, recebe o título novo e atualiza.
+
     atualizarFlashcard.js
         recebe o id do flashcard a ser deletado
         verifica se o id existe
@@ -80,11 +72,11 @@ DELETE
         se não quer, encerra a operação.
 
 BUSCA
-    buscarBaralho.js
-        recebe o nome/título do baralho que deseja encontrar
-        filtra os baralhos que tenham o título recebido
-        se existir resultados, ele retorna todos os resultados.
-        se não, retorna que nao tem resultados
+buscarBaralho.js
+recebe o nome/título do baralho que deseja encontrar
+filtra os baralhos que tenham o título recebido
+se existir resultados, ele retorna todos os resultados.
+se não, retorna que nao tem resultados
 
     buscaFlashcard.js
         pergunta se quer fazer a busca por id ou por texto da pergunta
@@ -95,10 +87,10 @@ BUSCA
         se não existir, retorna que não há resultados pra busca
 
 menu.js
-    Lista das opções de funções do sistema
+Lista das opções de funções do sistema
 
 operacoes.js
-    mudança das funções por switch
+mudança das funções por switch
 
 main.js
-    central de operações
+central de operações
