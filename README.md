@@ -1,4 +1,4 @@
-Autores: [Felipe Brandes] (https://github.com/FEBRAN07), [Pedro Paulo Woytichoski Neto] (https://github.com/PedroPwoyti), [Ana Carolina Ataya] (https://github.com/carol1802)
+Autores: [Felipe Brandes](https://github.com/FEBRAN07), [Pedro Paulo Woytichoski Neto](https://github.com/PedroPwoyti), [Ana Carolina Ataya](https://github.com/carol1802)
 
 Descrição do sistema:
 Sistema interativo que permite gerenciar os flashcards e seus respectivos baralhos.
