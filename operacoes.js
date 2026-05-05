@@ -67,7 +67,6 @@ function operacoes(op) {
             );
             deletarFlashcard(idFlashcard);
             return 'sucesso';
-        //buscas
         case 10:
             buscarFlashcard();
             return 'sucesso';

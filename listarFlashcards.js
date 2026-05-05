@@ -9,5 +9,4 @@ function listarFlashcards() {
     console.log('======');
 }
 
-//listarFlashcards();
 export default listarFlashcards;

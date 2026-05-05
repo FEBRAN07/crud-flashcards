@@ -9,5 +9,4 @@ function listarBaralhos() {
     console.log('======');
 }
 
-//listarBaralhos();
 export default listarBaralhos;

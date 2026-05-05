@@ -1,4 +1,5 @@
 import baralhos from './baralhos.js';
+import buscarBaralho from './buscarBaralho.js';
 import PromptSync from 'prompt-sync';
 const prompt = PromptSync();
 
@@ -9,9 +10,6 @@ function adicionarBaralho() {
         console.log('ERRO: Digite um título válido!');
         return;
     }
-    //SE O NOME DO BARALHO FOR REPETIDO
-    //função de busca recebe o nome novo.
-    // se achar, retorno negativo. se nao, push
 
     let ultimoId = baralhos[len - 1].id;
     baralhos.push({
@@ -21,5 +19,4 @@ function adicionarBaralho() {
     console.log('Baralho adicionado com sucesso!');
 }
 
-//adicionarBaralho();
 export default adicionarBaralho;

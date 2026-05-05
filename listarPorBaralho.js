@@ -26,5 +26,4 @@ function listarPorBaralho() {
     console.log('======');
 }
 
-//listarPorBaralho();
 export default listarPorBaralho;
